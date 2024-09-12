@@ -9,7 +9,8 @@ function solve() {
   const adoptedListElement = document.getElementById('adopted-list');
 
 
-  adoptButtonElement.addEventListener('click', () => {
+  adoptButtonElement.addEventListener('click', (e) => {
+    e.preventDefault
       const type = typeInputElement.value;
       const age = ageInputElement.value;
       const gender =  genderInputElement.value;
@@ -87,4 +88,4 @@ function solve() {
       });
 
   });
-};
+}
